@@ -13,6 +13,7 @@ import io.restassured.specification.RequestSpecification;
 public class BaseService 
 {
 	//Handling the BASE_URI & Creating the REQUEST , handling the RESPONSE
+	// Wrapper for restAssured
 	
 	private final static String BASE_URI="http://64.227.160.186:8080";
 	private RequestSpecification requestspecification;

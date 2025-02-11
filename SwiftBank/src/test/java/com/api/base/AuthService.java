@@ -1,6 +1,7 @@
 package com.api.base;
 
 import com.api.models.Request.LoginRequest;
+import com.api.models.Request.SignupRequest;
 
 import io.restassured.response.Response;
 
@@ -10,5 +11,10 @@ public class AuthService extends BaseService
 	public Response login(LoginRequest payload)
 	{
 		return postRequest(payload, BASE_PATH+"login");
+	}
+	
+	public Response Signup(SignupRequest payload)
+	{
+		return postRequest(payload, BASE_PATH+"signup");
 	}
 }
