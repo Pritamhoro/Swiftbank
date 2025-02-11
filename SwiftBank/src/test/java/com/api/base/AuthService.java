@@ -1,5 +1,8 @@
 package com.api.base;
 
+import java.util.HashMap;
+import java.util.Map;
+
 import com.api.models.Request.LoginRequest;
 import com.api.models.Request.SignupRequest;
 
@@ -16,5 +19,12 @@ public class AuthService extends BaseService
 	public Response Signup(SignupRequest payload)
 	{
 		return postRequest(payload, BASE_PATH+"signup");
+	}
+	
+	public Response ForgetPassword(String emailaddress)
+	{
+		HashMap<Object, Object> payload=new HashMap<Object, Object>();
+		payload.put("email", emailaddress);
+		return postRequest(payload,BASE_PATH+"forgot-password");
 	}
 }
