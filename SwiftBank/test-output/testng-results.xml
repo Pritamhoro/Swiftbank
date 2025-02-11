@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-02-11T22:15:32 IST" name="Default suite" finished-at="2025-02-11T22:15:35 IST" duration-ms="2715">
+  <suite started-at="2025-02-11T22:35:29 IST" name="Default suite" finished-at="2025-02-11T22:35:31 IST" duration-ms="1637">
     <groups>
     </groups>
-    <test started-at="2025-02-11T22:15:32 IST" name="Default test" finished-at="2025-02-11T22:15:35 IST" duration-ms="2715">
-      <class name="com.api.tests.AccountCreationTest">
-        <test-method signature="Account_Creation()[pri:0, instance:com.api.tests.AccountCreationTest@5876a9af]" started-at="2025-02-11T22:15:32 IST" name="Account_Creation" description="verify the user is being created" finished-at="2025-02-11T22:15:35 IST" duration-ms="2636" status="PASS">
+    <test started-at="2025-02-11T22:35:29 IST" name="Default test" finished-at="2025-02-11T22:35:31 IST" duration-ms="1637">
+      <class name="com.api.tests.ForgetPassword">
+        <test-method signature="ForgetPasswordTest()[pri:0, instance:com.api.tests.ForgetPassword@5876a9af]" started-at="2025-02-11T22:35:29 IST" name="ForgetPasswordTest" description="Verify user forget password is working --" finished-at="2025-02-11T22:35:31 IST" duration-ms="1596" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Account_Creation -->
-      </class> <!-- com.api.tests.AccountCreationTest -->
+        </test-method> <!-- ForgetPasswordTest -->
+      </class> <!-- com.api.tests.ForgetPassword -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
