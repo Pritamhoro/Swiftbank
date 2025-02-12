@@ -18,6 +18,10 @@ public class BaseService
 	private final static String BASE_URI="http://64.227.160.186:8080";
 	private RequestSpecification requestspecification;
 	
+	public void SetAccessToken(String token)
+	{
+		requestspecification.headers("Authorization" ,"Bearer "+ token);
+	}
 	public BaseService()
 	{
 		requestspecification=given().baseUri(BASE_URI);
@@ -29,5 +33,12 @@ public class BaseService
 		.contentType(ContentType.JSON)
 		.body(payload)
 		.post(endpoint);
+	}
+	
+	protected Response getRequest(String endpoint)
+	{
+		return requestspecification.accept(ContentType.JSON)
+		.contentType(ContentType.JSON)
+		.get(endpoint);
 	}
 }
