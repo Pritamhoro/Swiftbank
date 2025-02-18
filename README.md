@@ -1,0 +1,1 @@
+Swiftbank is a project for testing API authentication, using Rest Assured, It focuses on validating authentication endpoints and  handling secure API responses with HTTP requests (GET, POST, PUT, DELETE).
